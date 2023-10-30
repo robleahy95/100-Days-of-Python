@@ -1,0 +1,8 @@
+age = input()
+# 🚨 Don't change the code above 👆
+# Write your code below this line 👇
+
+new_age = int(age)
+
+print(f"You have {4680 - (new_age * 52) } weeks left.")
+# 4680

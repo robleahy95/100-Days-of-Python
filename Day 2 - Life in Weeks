@@ -6,3 +6,7 @@ new_age = int(age)
 
 print(f"You have {4680 - (new_age * 52) } weeks left.")
 # 4680
+#years = 90 - int(age)
+#weeks = years * 52
+
+#print(f"You have {weeks} weeks left.")

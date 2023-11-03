@@ -1,0 +1,60 @@
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+#Write your code below this line 👇
+
+import random
+
+game_images = [rock, paper, scissors]
+
+user_action = input("What do you choose? rock, paper or scissors? \n")
+
+possible_actions = ["rock", "paper", "scissors"]
+computer_action = random.choice(possible_actions)
+
+print(f"You chose {user_action}, computer chose {computer_action}")
+
+if user_action == computer_action:
+    print("It's a tie, go again!!")
+
+elif user_action == "rock":
+    if computer_action == "scissors":
+        print("You win, rock beats scissors")
+    else:
+        print("Computer wins, paper smothers rock!!")
+
+elif user_action == "paper":
+    if computer_action == "rock":
+        print("You win, paper beats rock")
+    else:
+        print("Computer wins, scissors chops up paper!!")
+
+elif user_action == "scissors":
+    if computer_action == "paper":
+        print("You win, scissors chops up paper")
+    else:
+        print("Computer wins, rock beas scissors!!")
